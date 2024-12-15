@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>favorite movie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: gold;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color:gray;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: violet;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+        }
+        form input[type="submit"] {
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>pushpa-2</h1>
+    </header>
+
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#cast">Cast</a>
+        <a href="#reviews">Reviews</a>
+    </nav>
+
+    <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>this is the main content of the movie.</p>
+        </section>
+
+        <section id="cast">
+            <h2>Main Cast</h2>
+            <ul>
+                <li>alluarjun</li>
+                <li>rashmika</li>
+                <li>sukumar</li>
+                
+            </ul>
+        </section>
+
+        <section id="showtimes">
+            <h2>Showtimes</h2>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Venue</th>
+                </tr>
+                <tr>
+                    <td>Dec 5, 2024</td>
+                    <td>7:00 PM</td>
+                    <td>IMAX Cinema</td>
+                </tr>
+                <tr>
+                    <td>Dec 6, 2024</td>
+                    <td>8:30 PM</td>
+                    <td>Regal Theater</td>
+                </tr>
+                <tr>
+                    <td>Dec 7, 2024</td>
+                    <td>6:00 PM</td>
+                    <td>AMC Multiplex</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="reviews">
+            <h2>Leave Your Review</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="review">Your Review:</label>
+                <textarea id="review" name="review" rows="5" required></textarea>
+
+                <input type="submit" value="Submit Review">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 Inception Movie Info
+    </footer>
+
+</body>
+</html>
